@@ -1,24 +1,57 @@
-Assignment You are building a server-side application to manage a job board for software developers. The application should have the following features:
+Job Portal
+Job Portal is a MERN Stack based web app which helps in streamlining the flow of job application process. It allows users to select there roles (applicant/recruiter), and create an account. In this web app, login session are persistent and REST APIs are securely protected by JWT token verification. After logging in, a recruiter can create/delete/update jobs, shortlist/accept/reject applications, view resume and edit profile. And, an applicant can view jobs, perform fuzzy search with various filters, apply for jobs with an SOP, view applications, upload profile picture, upload resume and edit profile. Hence, it is an all in one solution for a job application system.
 
-1.A user can create a new job posting by providing a title, description, and their email address. The user should also be able to specify the required skills and experience level for the job.
-2.A user can view a list of all current job postings, filtered by required skills and experience level.
-3.A user can view the details of a specific job posting, including the title, description, required skills, experience level, and email address of the person who created the posting.
-4.A user can apply for a job posting by providing their name, email, resume, and a cover letter. The cover letter should be in Markdown format.
-5.A user who created a job posting can view a list of all the applications for that job, including the name, email, and cover letter of the applicant.
-6.The application should be built using Node.js and Express, and should persist data using a MongoDB database. It should expose a RESTful API for clients to access the job postings and applications.
+Demo: Click Here
 
-Requirements
+Directory structure of the web app is as follows:
 
-1.Use Node.js and Express to build the application.
-2.Use MongoDB to store and retrieve data.
-3.Expose a RESTful API for clients to access the job postings and applications.
-4.Use proper routing and RESTful API design.
-5.Use proper error handling and input validation.
-6.Use Markdown to render the cover letters of job applications.
+- backend/
+    - public/
+        - profile/
+        - resume/
+- frontend/
+- README.md
+Instructions for initializing web app:
+Install Node JS, MongoDB in the machine.
+Start MongoDB server: sudo service mongod start
+Move inside backend directory: cd backend
+Install dependencies in backend directory: npm install
+Start express server: npm start
+Backend server will start on port 4444.
+Now go inside frontend directory: cd ..\frontend
+Install dependencies in frontend directory: npm install
+Start web app's frontend server: npm start
+Frontend server will start on port 3000.
+Now open http://localhost:3000/ and proceed creating jobs and applications by signing up in required categories.
+Dependencies:
+Frontend
+@material-ui/core
+@material-ui/icons
+@material-ui/lab
+axios
+material-ui-chip-input
+react-phone-input-2
+Backend
+bcrypt
+body-parser
+connect-flash
+connect-mongo
+cors
+crypto
+express
+express-session
+jsonwebtoken
+mongoose
+mongoose-type-email
+multer
+passport
+passport-jwt
+passport-local
+uuid
+Machine Specifications
+Details of the machine on which the webapp was tested:
 
-Bonus
-
-1.Implement authentication and authorization for the application.
-2.Allow users to edit and delete their own job postings and applications.
-3.Add pagination to the list of job postings and applications.
-4.Implement a search feature for the job postings.
+Operating System: Elementary OS 5.1 (Hera)
+Terminal: Bash
+Processor: Intel Core i7-8750H CPU @ 2.20 GHz 2.21 GHz
+RAM: 16 GB
