@@ -25,3 +25,8 @@ Sentry.startSpan({
 // Calls to stopProfiling are optional - if you don't stop the profiler, it will keep profiling
 // your application until the process exits or stopProfiling is called.
 Sentry.profiler.stopProfiler();
+/*
+ * This is a multi-line comment.
+ * Use it for detailed explanations or documentation
+ * when single-line comments aren't sufficient.
+ */
