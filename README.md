@@ -1,4 +1,5 @@
 💼 Job_Quest – Job Portal Web Application
+
 Job_Quest is a full-stack job portal that enables job seekers to search and apply for jobs, upload resumes, and manage their applications. Employers can post job openings, review applicants, and manage job listings. The platform features secure authentication and a responsive interface, built using the MERN stack (MongoDB, Express, React, Node.js).
 
 🛠️ Tech Stack
