@@ -14,8 +14,9 @@
   }
 }
 
-::-webkit-scrollbar{
-  display: none;
+
+  ::-webkit-scrollbar{
+    display: none;
 }
 
 .rich-text { font-size: 15px; color: #7A7B7D; }
