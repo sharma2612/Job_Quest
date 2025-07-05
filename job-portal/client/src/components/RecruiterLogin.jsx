@@ -70,7 +70,6 @@ const RecruiterLogin = () => {
         }
 
     }
-
     useEffect(() => {
         document.body.style.overflow = 'hidden'
 
